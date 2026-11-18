@@ -1,1 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sizer S1 Family Salon | Malad East</title>
+<meta name="description" content="Sizer S1 Family Salon, Malad East Mumbai. Discover professional hair, beauty and grooming services. Book your appointment online.">
 
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#101010;color:#fff;font-family:Arial,sans-serif}
+:root{--gold:#d6b36a;--dark:#101010}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:100;background:#101010f5;border-bottom:1px solid #55452c;padding:17px 6%;display:flex;align-items:center;justify-content:space-between}
+.logo{color:var(--gold);font-size:25px;font-weight:bold;letter-spacing:3px}
+.logo small{display:block;font-size:10px;letter-spacing:4px;text-align:center;color:white;margin-top:4px}
+nav{display:flex;gap:22px}
+nav a{font-size:12px;letter-spacing:1px}
+nav a:hover{color:var(--gold)}
+.hero{min-height:85vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 20px;background:linear-gradient(#0009,#000b),url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1800') center/cover}
+.hero h1{font-size:clamp(43px,8vw,85px);color:var(--gold);letter-spacing:5px}
+.hero h2{font-size:20px;letter-spacing:7px;margin:12px}
+.hero p{color:#ddd;line-height:1.8;margin-top:15px}
+.btn{display:inline-block;background:var(--gold);color:#111;padding:15px 25px;margin:20px 6px;border:1px solid var(--gold);font-weight:bold;font-size:12px;letter-spacing:1px;cursor:pointer}
+.btn.outline{background:transparent;color:var(--gold)}
+section{padding:75px 8%;text-align:center}
+.heading{color:var(--gold);font-size:34px;margin-bottom:14px}
+.sub{color:#aaa;margin-bottom:35px;line-height:1.7}
+.about{max-width:750px;margin:auto;color:#ccc;line-height:2}
+.dark{background:#181818}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.service{background:#202020;border:1px solid #51432c;padding:35px 20px;transition:.3s}
+.service:hover{border-color:var(--gold);transform:translateY(-5px)}
+.service h3{color:var(--gold);margin-bottom:14px}
+.service p{font-size:14px;color:#bbb;line-height:1.8}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.gallery img{width:100%;height:260px;object-fit:cover}
+.review-box{max-width:650px;margin:auto;padding:40px 20px;background:#202020;border:1px solid #55452c}
+.stars{color:var(--gold);font-size:35px;letter-spacing:5px;margin:15px}
+.review-box p{color:#ccc;line-height:1.8}
+.booking{max-width:650px;margin:auto;text-align:left;background:#202020;border:1px solid #55452c;padding:30px}
+.booking label{display:block;color:var(--gold);font-size:13px;margin:17px 0 8px}
+.booking input,.booking select,.booking textarea{width:100%;padding:14px;background:#111;color:white;border:1px solid #55452c;font-size:14px;border-radius:2px}
+.booking button{width:100%;margin-top:25px}
+.contact-box{max-width:650px;margin:auto;background:#202020;padding:35px;border:1px solid #55452c;line-height:2}
+.contact-box p{color:#ccc}
+footer{background:#080808;text-align:center;padding:30px;color:#aaa;font-size:13px;line-height:2}
+footer span{color:var(--gold)}
+.float{position:fixed;bottom:20px;right:18px;background:#20bd65;color:white;padding:15px 19px;border-radius:40px;z-index:200;font-weight:bold;font-size:13px}
+@media(max-width:650px){
+header{flex-direction:column;gap:15px;padding:15px 5%}
+nav{gap:13px;flex-wrap:wrap;justify-content:center}
+nav a{font-size:10px}
+section{padding:60px 6%}
+.hero{min-height:75vh}
+.heading{font-size:28px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">SIZER S1<small>FAMILY SALON</small></div>
+<nav>
+<a href="#home">HOME</a>
+<a href="#about">ABOUT</a>
+<a href="#services">SERVICES</a>
+<a href="#gallery">GALLERY</a>
+<a href="#reviews">REVIEWS</a>
+<a href="#booking">BOOK NOW</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<div>
+<h1>SIZER S1</h1>
+<h2>FAMILY SALON</h2>
+<p>Beauty • Style • Confidence</p>
+<p>Look Good. Feel Beautiful. Be Confident.</p>
+<a href="#booking" class="btn">BOOK APPOINTMENT</a>
+<a href="#services" class="btn outline">EXPLORE SERVICES</a>
+</div>
+</div>
+
+<section id="about">
+<h2 class="heading">WELCOME TO SIZER S1</h2>
+<p class="sub">Your Style, Our Passion</p>
+<div class="about">
+<p>Welcome to Sizer S1 Family Salon, your destination for professional beauty, hair and grooming services.</p>
+<p>We believe everyone deserves to look and feel their best. Our aim is to provide quality salon services in a comfortable and welcoming environment for the entire family.</p>
+</div>
+</section>
+
+<section class="dark" id="services">
+<h2 class="heading">OUR SERVICES</h2>
+<p class="sub">Professional care for everyone</p>
+<div class="services">
+<div class="service"><h3>Men's Grooming</h3><p>Haircuts, hairstyling, beard styling and grooming.</p></div>
+<div class="service"><h3>Women's Hair</h3><p>Haircuts, hair colouring, styling and hair treatments.</p></div>
+<div class="service"><h3>Kids Services</h3><p>Comfortable haircuts and grooming for kids.</p></div>
+<div class="service"><h3>Facial & Skincare</h3><p>Facials, clean-ups, bleach and D-Tan treatments.</p></div>
+<div class="service"><h3>Hair Spa</h3><p>Relaxing hair spa and nourishing hair treatments.</p></div>
+<div class="service"><h3>Smoothening & Keratin</h3><p>Professional hair smoothening, keratin and botox.</p></div>
+<div class="service"><h3>Manicure & Pedicure</h3><p>Professional hand and foot care.</p></div>
+<div class="service"><h3>Waxing & Threading</h3><p>Beauty and personal grooming services.</p></div>
+<div class="service"><h3>Bridal & Makeup</h3><p>Bridal makeup, party makeup and hairstyling.</p></div>
+<div class="service"><h3>Body Massage</h3><p>Relaxing body and head massage services.</p></div>
+<div class="service"><h3>Nail Services</h3><p>Nail care, nail art and professional nail services.</p></div>
+<div class="service"><h3>Special Packages</h3><p>Salon combos and beauty packages.</p></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="heading">OUR GALLERY</h2>
+<p class="sub">A glimpse of the salon experience</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=700" alt="Salon interior">
+<img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=700" alt="Beauty salon">
+<img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=700" alt="Barber service">
+<img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d5?w=700" alt="Salon styling">
+</div>
+</section>
+
+<section class="dark" id="reviews">
+<h2 class="heading">CUSTOMER REVIEWS</h2>
+<p class="sub">Your feedback means everything to us</p>
+<div class="review-box">
+<div class="stars">★★★★★</div>
+<h3>LOVE YOUR EXPERIENCE?</h3>
+<p>We would love to hear your feedback. Share your experience and help others discover Sizer S1 Family Salon.</p>
+<a class="btn" href="https://g.page/r/CUj_Z_14hE1EEBE/review" target="_blank">WRITE A GOOGLE REVIEW</a>
+</div>
+</section>
+
+<section id="booking">
+<h2 class="heading">BOOK YOUR APPOINTMENT</h2>
+<p class="sub">Choose your preferred service, date and time</p>
+
+<form class="booking" id="bookingForm">
+<label>Full Name *</label>
+<input type="text" id="customerName" placeholder="Enter your name" required>
+
+<label>Mobile Number *</label>
+<input type="tel" id="customerPhone" placeholder="Enter your mobile number" pattern="[0-9]{10}" maxlength="10" required>
+
+<label>Select Service *</label>
+<select id="customerService" required>
+<option value="">Choose a service</option>
+<option>Men's Haircut & Grooming</option>
+<option>Women's Haircut & Styling</option>
+<option>Kids Haircut</option>
+<option>Hair Colour & Highlights</option>
+<option>Hair Spa</option>
+<option>Smoothening / Keratin / Botox</option>
+<option>Facial & Clean-up</option>
+<option>Beard Styling</option>
+<option>Manicure / Pedicure</option>
+<option>Waxing / Threading</option>
+<option>Bridal & Makeup</option>
+<option>Body / Head Massage</option>
+<option>Nail Services</option>
+<option>Other Services</option>
+</select>
+
+<label>Appointment Date *</label>
+<input type="date" id="customerDate" required>
+
+<label>Preferred Time *</label>
+<select id="customerTime" required>
+<option value="">Select time</option>
+<option>10:00 AM</option>
+<option>11:00 AM</option>
+<option>12:00 PM</option>
+<option>1:00 PM</option>
+<option>2:00 PM</option>
+<option>3:00 PM</option>
+<option>4:00 PM</option>
+<option>5:00 PM</option>
+<option>6:00 PM</option>
+<option>7:00 PM</option>
+<option>8:00 PM</option>
+<option>9:00 PM</option>
+</select>
+
+<label>Additional Message (Optional)</label>
+<textarea id="customerMessage" rows="3" placeholder="Any special request?"></textarea>
+
+<button type="submit" class="btn">SEND APPOINTMENT REQUEST ON WHATSAPP</button>
+<p style="font-size:11px;color:#aaa;text-align:center;margin-top:12px">Your appointment is confirmed only after salon approval.</p>
+</form>
+</section>
+
+<section class="dark" id="contact">
+<h2 class="heading">VISIT OUR SALON</h2>
+<p class="sub">We look forward to welcoming you</p>
+<div class="contact-box">
+<h3 style="color:#d6b36a">SIZER S1 FAMILY SALON</h3>
+<p>Shop No. 1-2, Deora Building,<br>
+Rani Sati Road, Malad Station East,<br>
+Mumbai - 400097</p>
+<p>Appointment & Enquiries</p>
+<p>9326222064</p>
+<a class="btn" href="https://maps.app.goo.gl/RS6QD3SWbrrrT5ZB6?g_st=ic" target="_blank">GET DIRECTIONS</a>
+<a class="btn outline" href="https://wa.me/919326222064" target="_blank">WHATSAPP US</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 <span>SIZER S1 FAMILY SALON</span>. All Rights Reserved.</p>
+<p>Beauty • Style • Confidence</p>
+</footer>
+
+<a class="float" href="https://wa.me/919326222064" target="_blank">WhatsApp</a>
+
+<script>
+const dateInput = document.getElementById('customerDate');
+const today = new Date();
+const localToday = new Date(today.getTime() - today.getTimezoneOffset()*60000)
+.toISOString().split('T')[0];
+dateInput.min = localToday;
+
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+e.preventDefault();
+
+const name=document.getElementById('customerName').value.trim();
+const phone=document.getElementById('customerPhone').value.trim();
+const service=document.getElementById('customerService').value;
+const date=document.getElementById('customerDate').value;
+const time=document.getElementById('customerTime').value;
+const message=document.getElementById('customerMessage').value.trim();
+
+if(!/^[0-9]{10}$/.test(phone)){
+alert('Please enter a valid 10-digit mobile number.');
+return;
+}
+
+const text=`Hello Sizer S1 Family Salon!
+
+I would like to request an appointment.
+
+Name: ${name}
+Mobile: ${phone}
+Service: ${service}
+Date: ${date}
+Preferred Time: ${time}
+Additional Message: ${message || 'None'}
+
+Please confirm my appointment. Thank you!`;
+
+window.open('https://wa.me/919326222064?text='+encodeURIComponent(text),'_blank');
+});
+</script>
+
+</body>
+</html>
